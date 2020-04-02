@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">Gorjeta</string>
+    <string name="todo">TODO</string>
+    <string name="total">Total</string>
+    <string name="digite_um_valor_ex_36_50">Digite um valor Ex: 36.50</string>
+    <string name="_0">0%</string>
+    <string name="textview">TextView</string>
+    <string name="gorjeta">Gorjeta</string>
+</resources>
