@@ -26,8 +26,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
 
        View itemLista = LayoutInflater.from(parent.getContext())
                .inflate(R.layout.adapter_lista, parent, false);   //Converte um XML em uma View
-
-
         return new MyViewHolder(itemLista);
     }
 
@@ -35,7 +33,6 @@ public class Adapter extends RecyclerView.Adapter<Adapter.MyViewHolder> {
     public void onBindViewHolder(@NonNull MyViewHolder holder, int position) { //Possibilida a visualização das views
 
         Filme filme = listaFilmes.get(position);
-
         holder.titulo.setText(filme.getTitulo());
         holder.ano.setText(filme.getAno());
         holder.genero.setText(filme.getGenero());

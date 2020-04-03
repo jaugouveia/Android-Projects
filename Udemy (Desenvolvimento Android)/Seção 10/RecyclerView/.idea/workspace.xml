@@ -5,14 +5,13 @@
       <config />
     </shared>
   </component>
+  <component name="AndroidLogFilters">
+    <option name="TOOL_WINDOW_CONFIGURED_FILTER" value="Show only selected application" />
+  </component>
   <component name="ChangeListManager">
     <list default="true" id="714d8d32-60d9-448a-a687-8437ee8898f4" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/ListView/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/codeStyles/Project.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/ListView/app/src/main/java/com/example/listview/MainActivity.java" beforeDir="false" afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/ListView/app/src/main/java/com/example/listview/MainActivity.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/vcs.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/vcs.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/../Udemy (Desenvolvimento Android)/Seção 10/RecyclerView/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -20,7 +19,7 @@
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
     <option name="LAST_RESOLUTION" value="IGNORE" />
   </component>
-  <component name="ExecutionTargetManager" SELECTED_TARGET="Nexus_5X_API_29_x86" />
+  <component name="ExecutionTargetManager" SELECTED_TARGET="0054627790" />
   <component name="ExternalProjectsData">
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
@@ -52,6 +51,9 @@
   </component>
   <component name="ProjectId" id="1a05bFlvQZDHVZuH3OdsdJr48jo" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="PropertiesComponent">
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+  </component>
   <component name="RunDashboard">
     <option name="ruleStates">
       <list>

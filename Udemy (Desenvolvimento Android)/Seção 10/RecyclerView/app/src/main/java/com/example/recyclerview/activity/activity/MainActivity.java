@@ -6,9 +6,13 @@ import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
 import android.os.Bundle;
+import android.view.View;
+import android.widget.AdapterView;
 import android.widget.LinearLayout;
+import android.widget.Toast;
 
 import com.example.recyclerview.R;
+import com.example.recyclerview.activity.RecyclerItemClickListener;
 import com.example.recyclerview.activity.adapter.Adapter;
 import com.example.recyclerview.activity.model.Filme;
 
@@ -17,7 +21,7 @@ import java.util.List;
 
 public class MainActivity extends AppCompatActivity {
 
-    private List<Filme> listaFilmes = new ArrayList<>();
+    private List<Filme> listaFilmes = new ArrayList<>(); //Cria Array do Tipo Filmes (Objeto)
     private RecyclerView recyclerview;
 
     @Override
@@ -27,7 +31,7 @@ public class MainActivity extends AppCompatActivity {
         recyclerview = findViewById(R.id.recyclerView);
         //Lista os Filmes
         this.criarFilmes();
-        // Configurar Adapter
+        // Configura dados do Adapter
         Adapter adapter = new Adapter(listaFilmes);
 
         // RecyclerView Configurar
@@ -36,8 +40,41 @@ public class MainActivity extends AppCompatActivity {
         recyclerview.setHasFixedSize(true); //Define o tamanho do recyclerView como fixo
         recyclerview.setAdapter(adapter); //Pega os dados da classe 'adapter' e monta uma visualização (view)
         recyclerview.addItemDecoration(new DividerItemDecoration(this, LinearLayout.VERTICAL));
-    }
 
+        // Evento de Click
+        recyclerview.addOnItemTouchListener(
+            new RecyclerItemClickListener(
+                    getApplicationContext(),
+                    recyclerview,
+                    new RecyclerItemClickListener.OnItemClickListener() {
+                        @Override
+                        public void onItemClick(View view, int position) {
+                            Toast.makeText(
+                                    getApplicationContext(),
+                                    listaFilmes.get(position).getTitulo(),
+                                    Toast.LENGTH_SHORT
+                            ).show();
+                        }
+
+                        @Override
+                        public void onLongItemClick(View view, int position) {
+                            Toast.makeText(
+                                    getApplicationContext(),
+                                    listaFilmes.get(position).getGenero(),
+                                    Toast.LENGTH_LONG
+                            ).show();
+                        }
+
+                        @Override
+                        public void onItemClick(AdapterView<?> parent, View view, int position, long id) {
+
+                        }
+                    }
+            )
+        );
+
+
+    }
     public void criarFilmes(){
 
         Filme filme = new Filme("Aves de Rapina", "Ação/Aventura", "2020");
